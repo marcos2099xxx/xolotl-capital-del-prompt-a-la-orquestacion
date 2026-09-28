@@ -1,0 +1,42 @@
+%% Figura 2: Procedimiento de desarrollo agéntico reflexivo
+flowchart TD
+    classDef human fill:#e0f2fe,stroke:#0369a1,stroke-width:2px,color:#0c4a6e;
+    classDef agent fill:#fef3c7,stroke:#b45309,stroke-width:2px,color:#78350f;
+    classDef phase fill:#ffffff,stroke:#334155,stroke-width:3px,font-weight:bold,color:#0f172a;
+
+    subgraph P1 ["1. PROBLEMATIZACIÓN"]
+        P1_A["Agente: Caracteriza el problema con evidencia<br/>(logs, errores, métricas)"]:::agent
+        P1_H["Humano: Delimita el problema, descarta falsos<br/>positivos y fija el objetivo"]:::human
+    end
+
+    subgraph P2 ["2. EXPLORACIÓN CONTEXTUAL"]
+        P2_A["Agente: Inspecciona código (MCP), consulta doc<br/>oficial (Context7) y revisa configs"]:::agent
+        P2_H["Humano: Clarifica requerimientos y confirma<br/>restricciones de negocio"]:::human
+    end
+
+    subgraph P3 ["3. PLANIFICACIÓN SUPERVISADA"]
+        P3_A["Agente: Propone alternativas, diffs tentativos,<br/>análisis de riesgos y plan de tests"]:::agent
+        P3_H["Humano: Evalúa opciones, ajusta diseño y<br/>AUTORIZA la implementación"]:::human
+    end
+
+    subgraph P4 ["4. IMPLEMENTACIÓN DELEGADA"]
+        P4_A["Agente: Escribe código, migraciones SQL con<br/>timestamp y tests unitarios"]:::agent
+        P4_H["Humano: Supervisa disciplina del alcance y<br/>atiende dudas de desambiguación"]:::human
+    end
+
+    subgraph P5 ["5. VERIFICACIÓN REFLEXIVA"]
+        P5_A["Agente: Ejecuta pruebas automáticas, linters,<br/>guards de tamaño y QA en navegador"]:::agent
+        P5_H["Humano: Prueba en dispositivos reales, revisa<br/>git diff y valida estética anti-slop"]:::human
+    end
+
+    subgraph P6 ["6. CONSOLIDACIÓN DEL CONOCIMIENTO"]
+        P6_A["Agente: Actualiza docs de dominio, registra<br/>incidencia y redacta nuevas reglas"]:::agent
+        P6_H["Humano: Aprueba reglas en AGENTS.md y<br/>ordena commit con mensaje formal"]:::human
+    end
+
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    P5 --> P6
+    P6 -- "Cierre de ciclo / Nuevas iteraciones (Reflexión continua)" --> P1

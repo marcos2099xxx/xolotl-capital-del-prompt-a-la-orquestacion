@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Si utiliza este material suplementario o hace referencia al artículo, por favor cite como se indica a continuación."
+title: "Del prompt a la orquestación agéntica: desarrollo experiencial de Xolotl Capital, un simulador bursátil educativo"
+authors:
+  - family-names: "Arias Ramírez"
+    given-names: "Marcos Alberto"
+    email: "marcos2099x@gmail.com"
+    affiliation: "Universidad Juárez Autónoma de Tabasco, División Académica de Ciencias y Tecnologías de la Información"
+    orcid: ""
+  - family-names: "Corona Ferreira"
+    given-names: "Arturo"
+    email: "arturo.corona@ujat.mx"
+    affiliation: "Universidad Juárez Autónoma de Tabasco, División Académica de Ciencias y Tecnologías de la Información"
+    orcid: ""
+type: article
+date-released: "2026-09-28"
+keywords:
+  - "inteligencia artificial generativa"
+  - "orquestación agéntica"
+  - "aprendizaje experiencial"
+  - "simulador bursátil"
+  - "desarrollo de software"
+  - "supervisión humana"
+  - "human-in-the-loop"
+abstract: "Materiales suplementarios, evidencias documentales y sistematización operativa que respaldan el short paper 'Del prompt a la orquestación agéntica: desarrollo experiencial de Xolotl Capital, un simulador bursátil educativo'. Incluye versión pública auditada del PRD pedagógico original, fragmentos conservados del prototipo web inicial, extractos operativos saneados de AGENTS.md, trazabilidad de incidencias técnicas en órdenes programadas y diagramas metodológicos."
+license: "CC-BY-4.0"
+repository-code: ""

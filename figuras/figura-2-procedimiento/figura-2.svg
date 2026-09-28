@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 840" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #0f172a; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 13px; fill: #475569; }
+      .phase-num { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #1e293b; text-anchor: middle; }
+      .phase-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #0f172a; }
+      .role-tag-agent { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #b45309; }
+      .role-tag-human { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #0369a1; }
+      .body-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; fill: #334155; }
+      .legend-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #334155; }
+      .arrow-line { stroke: #64748b; stroke-width: 3; fill: none; }
+      .loop-line { stroke: #0284c7; stroke-width: 2.5; stroke-dasharray: 6,4; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Fondo general blanco -->
+  <rect width="1000" height="840" fill="#ffffff" />
+
+  <!-- Encabezado de la Figura -->
+  <text x="40" y="38" class="title">Figura 2. Procedimiento de desarrollo agéntico reflexivo</text>
+  <text x="40" y="60" class="subtitle">Estructura iterativa de seis fases articulada con el ciclo de aprendizaje experiencial (Kolb, 1984)</text>
+
+  <!-- Leyenda de roles -->
+  <g transform="translate(580, 24)">
+    <rect x="0" y="2" width="18" height="18" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+    <text x="26" y="16" class="legend-text">Intervención Humana (Director / Decisor)</text>
+    <rect x="0" y="26" width="18" height="18" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" />
+    <text x="26" y="40" class="legend-text">Acción del Agente IA (Instrumento / Ejecutor)</text>
+  </g>
+
+  <!-- ==================== COLUMNA IZQUIERDA (Fases 1, 2, 3) ==================== -->
+
+  <!-- FASE 1: PROBLEMATIZACIÓN -->
+  <g transform="translate(40, 85)">
+    <rect width="425" height="190" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="12" width="26" height="24" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1" />
+    <text x="28" y="29" class="phase-num">1</text>
+    <text x="50" y="29" class="phase-title">PROBLEMATIZACIÓN</text>
+    
+    <!-- Bloque Agente -->
+    <rect x="15" y="46" width="395" height="60" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2" />
+    <text x="25" y="64" class="role-tag-agent">ACCIÓN DEL AGENTE (IA):</text>
+    <text x="25" y="81" class="body-text">Caracteriza el problema con evidencia empírica: extrae</text>
+    <text x="25" y="97" class="body-text">mensajes de error, logs y estado de Git sin alterar código.</text>
+
+    <!-- Bloque Humano -->
+    <rect x="15" y="116" width="395" height="60" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2" />
+    <text x="25" y="134" class="role-tag-human">INTERVENCIÓN HUMANA:</text>
+    <text x="25" y="151" class="body-text">Delimita el alcance funcional, descarta falsos positivos y</text>
+    <text x="25" y="167" class="body-text">establece el objetivo técnico de la intervención.</text>
+  </g>
+
+  <!-- Flecha 1 -> 2 (con punta explícita) -->
+  <line x1="252" y1="275" x2="252" y2="310" class="arrow-line" />
+  <polygon points="252,318 245,306 259,306" fill="#64748b" />
+
+  <!-- FASE 2: EXPLORACIÓN CONTEXTUAL -->
+  <g transform="translate(40, 320)">
+    <rect width="425" height="190" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="12" width="26" height="24" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1" />
+    <text x="28" y="29" class="phase-num">2</text>
+    <text x="50" y="29" class="phase-title">EXPLORACIÓN CONTEXTUAL</text>
+
+    <!-- Bloque Agente -->
+    <rect x="15" y="46" width="395" height="60" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2" />
+    <text x="25" y="64" class="role-tag-agent">ACCIÓN DEL AGENTE (IA):</text>
+    <text x="25" y="81" class="body-text">Navega el grafo del código (MCP), recupera documentación</text>
+    <text x="25" y="97" class="body-text">oficial viva (Context7) e inspecciona contratos y configs.</text>
+
+    <!-- Bloque Humano -->
+    <rect x="15" y="116" width="395" height="60" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2" />
+    <text x="25" y="134" class="role-tag-human">INTERVENCIÓN HUMANA:</text>
+    <text x="25" y="151" class="body-text">Proporciona reglas no escritas del negocio y confirma</text>
+    <text x="25" y="167" class="body-text">las fronteras arquitectónicas que no deben tocarse.</text>
+  </g>
+
+  <!-- Flecha 2 -> 3 (con punta explícita) -->
+  <line x1="252" y1="510" x2="252" y2="545" class="arrow-line" />
+  <polygon points="252,553 245,541 259,541" fill="#64748b" />
+
+  <!-- FASE 3: PLANIFICACIÓN SUPERVISADA -->
+  <g transform="translate(40, 555)">
+    <rect width="425" height="190" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="12" width="26" height="24" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1" />
+    <text x="28" y="29" class="phase-num">3</text>
+    <text x="50" y="29" class="phase-title">PLANIFICACIÓN SUPERVISADA</text>
+
+    <!-- Bloque Agente -->
+    <rect x="15" y="46" width="395" height="60" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2" />
+    <text x="25" y="64" class="role-tag-agent">ACCIÓN DEL AGENTE (IA):</text>
+    <text x="25" y="81" class="body-text">Propone alternativas de solución, desglosa cambios,</text>
+    <text x="25" y="97" class="body-text">evalúa riesgos de regresión y define estrategia de prueba.</text>
+
+    <!-- Bloque Humano -->
+    <rect x="15" y="116" width="395" height="60" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2" />
+    <text x="25" y="134" class="role-tag-human">INTERVENCIÓN HUMANA:</text>
+    <text x="25" y="151" class="body-text">Evalúa opciones técnicas, exige ajustes al diseño y</text>
+    <text x="25" y="167" class="body-text">AUTORIZA explícitamente el plan antes de implementar.</text>
+  </g>
+
+  <!-- Flecha horizontal 3 -> 4 -->
+  <line x1="465" y1="650" x2="525" y2="650" class="arrow-line" />
+  <polygon points="533,650 521,643 521,657" fill="#64748b" />
+
+  <!-- ==================== COLUMNA DERECHA (Fases 4, 5, 6) ==================== -->
+
+  <!-- FASE 4: IMPLEMENTACIÓN DELEGADA -->
+  <g transform="translate(535, 555)">
+    <rect width="425" height="190" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="12" width="26" height="24" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1" />
+    <text x="28" y="29" class="phase-num">4</text>
+    <text x="50" y="29" class="phase-title">IMPLEMENTACIÓN DELEGADA</text>
+
+    <!-- Bloque Agente -->
+    <rect x="15" y="46" width="395" height="60" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2" />
+    <text x="25" y="64" class="role-tag-agent">ACCIÓN DEL AGENTE (IA):</text>
+    <text x="25" y="81" class="body-text">Escribe código acotado al plan, genera migraciones SQL</text>
+    <text x="25" y="97" class="body-text">con timestamp y construye casos de prueba unitarios.</text>
+
+    <!-- Bloque Humano -->
+    <rect x="15" y="116" width="395" height="60" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2" />
+    <text x="25" y="134" class="role-tag-human">INTERVENCIÓN HUMANA:</text>
+    <text x="25" y="151" class="body-text">Supervisa disciplina del alcance y responde preguntas</text>
+    <text x="25" y="167" class="body-text">de desambiguación emitidas por el modelo.</text>
+  </g>
+
+  <!-- Flecha 4 -> 5 (hacia arriba) -->
+  <line x1="747" y1="555" x2="747" y2="520" class="arrow-line" />
+  <polygon points="747,512 740,524 754,524" fill="#64748b" />
+
+  <!-- FASE 5: VERIFICACIÓN REFLEXIVA -->
+  <g transform="translate(535, 320)">
+    <rect width="425" height="190" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="12" width="26" height="24" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1" />
+    <text x="28" y="29" class="phase-num">5</text>
+    <text x="50" y="29" class="phase-title">VERIFICACIÓN REFLEXIVA</text>
+
+    <!-- Bloque Agente -->
+    <rect x="15" y="46" width="395" height="60" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2" />
+    <text x="25" y="64" class="role-tag-agent">ACCIÓN DEL AGENTE (IA):</text>
+    <text x="25" y="81" class="body-text">Ejecuta suite de tests automáticos, linters, análisis de</text>
+    <text x="25" y="97" class="body-text">cobertura, guards de tamaño y QA en navegador.</text>
+
+    <!-- Bloque Humano -->
+    <rect x="15" y="116" width="395" height="60" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2" />
+    <text x="25" y="134" class="role-tag-human">INTERVENCIÓN HUMANA:</text>
+    <text x="25" y="151" class="body-text">Prueba en dispositivos físicos reales, audita el git diff</text>
+    <text x="25" y="167" class="body-text">y valida la estética contra directrices anti-slop.</text>
+  </g>
+
+  <!-- Flecha 5 -> 6 (hacia arriba) -->
+  <line x1="747" y1="320" x2="747" y2="285" class="arrow-line" />
+  <polygon points="747,277 740,289 754,289" fill="#64748b" />
+
+  <!-- FASE 6: CONSOLIDACIÓN DEL CONOCIMIENTO -->
+  <g transform="translate(535, 85)">
+    <rect width="425" height="190" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+    <rect x="15" y="12" width="26" height="24" rx="5" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1" />
+    <text x="28" y="29" class="phase-num">6</text>
+    <text x="50" y="29" class="phase-title">CONSOLIDACIÓN DEL CONOCIMIENTO</text>
+
+    <!-- Bloque Agente -->
+    <rect x="15" y="46" width="395" height="60" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2" />
+    <text x="25" y="64" class="role-tag-agent">ACCIÓN DEL AGENTE (IA):</text>
+    <text x="25" y="81" class="body-text">Actualiza documentación viva de dominio (`docs/`),</text>
+    <text x="25" y="97" class="body-text">actualiza `KNOWN_ISSUES.md` y redacta reglas operativas.</text>
+
+    <!-- Bloque Humano -->
+    <rect x="15" y="116" width="395" height="60" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2" />
+    <text x="25" y="134" class="role-tag-human">INTERVENCIÓN HUMANA:</text>
+    <text x="25" y="151" class="body-text">Formaliza directrices en AGENTS.md (memoria externa)</text>
+    <text x="25" y="167" class="body-text">y autoriza commit trazable en español.</text>
+  </g>
+
+  <!-- Flecha de retorno cíclico 6 -> 1 (Bucle de aprendizaje continuo) -->
+  <path d="M 535 180 L 477 180" class="loop-line" />
+  <polygon points="469,180 481,173 481,187" fill="#0284c7" />
+
+  <g transform="translate(473, 142)">
+    <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+    <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0369a1" text-anchor="middle">BUCLE</text>
+  </g>
+  <text x="500" y="205" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="10.5px" font-style="italic" fill="#0369a1" text-anchor="middle">Aprendizaje</text>
+  <text x="500" y="218" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="10.5px" font-style="italic" fill="#0369a1" text-anchor="middle">persistente</text>
+
+  <!-- Nota al pie metodológica -->
+  <text x="40" y="785" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11.5px" font-style="italic" fill="#64748b">Nota. Sistematización retrospectiva de la dinámica observada en Xolotl Capital. La intervención humana delimita, selecciona, autoriza y verifica;</text>
+  <text x="40" y="802" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11.5px" font-style="italic" fill="#64748b">el agente apoya en análisis contextual y ejecución disciplinada. No constituye un método experimentalmente contrastado.</text>
+</svg>

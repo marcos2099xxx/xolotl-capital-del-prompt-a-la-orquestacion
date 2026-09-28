@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 22px; font-weight: bold; fill: #0f172a; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 13.5px; fill: #475569; }
+      .stage-num { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+      .stage-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #0f172a; }
+      .stage-date { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #0284c7; }
+      .section-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #475569; text-transform: uppercase; }
+      .item-bullet { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; fill: #334155; }
+      .tag-bg { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
+      .tag-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #334155; }
+      .preview-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #475569; text-anchor: middle; }
+      .preview-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 11px; fill: #64748b; text-anchor: middle; }
+      .timeline-axis { stroke: #cbd5e1; stroke-width: 4; stroke-linecap: round; }
+      .arrow-conn { stroke: #0284c7; stroke-width: 3; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Fondo blanco general -->
+  <rect width="1200" height="780" fill="#ffffff" />
+
+  <!-- Encabezado de la Figura -->
+  <text x="50" y="40" class="title">Figura 1. Evolución del simulador bursátil educativo Xolotl Capital</text>
+  <text x="50" y="62" class="subtitle">Línea de tiempo de las tres etapas: desde el prototipado inicial hasta la orquestación agéntica con supervisión humana</text>
+
+  <!-- Barra horizontal de tiempo continua -->
+  <line x1="80" y1="95" x2="1120" y2="95" class="timeline-axis" />
+
+  <!-- Nodos de tiempo en la barra -->
+  <circle cx="230" cy="95" r="9" fill="#0284c7" stroke="#ffffff" stroke-width="2.5" />
+  <circle cx="600" cy="95" r="9" fill="#0284c7" stroke="#ffffff" stroke-width="2.5" />
+  <circle cx="970" cy="95" r="9" fill="#0284c7" stroke="#ffffff" stroke-width="2.5" />
+
+  <!-- ==================== ETAPA 1 ==================== -->
+  <g transform="translate(50, 115)">
+    <!-- Contenedor principal de la Etapa 1 -->
+    <rect width="350" height="605" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.8" />
+    
+    <!-- Encabezado de Etapa -->
+    <rect x="15" y="14" width="28" height="26" rx="6" fill="#0284c7" />
+    <text x="29" y="32" class="stage-num">1</text>
+    <text x="52" y="27" class="stage-title">Origen académico y prototipo web</text>
+    <text x="52" y="42" class="stage-date">Abril de 2026</text>
+
+    <!-- Características clave -->
+    <text x="18" y="70" class="section-label">Fundamentos e Instrumentación</text>
+    
+    <g transform="translate(18, 80)">
+      <circle cx="4" cy="7" r="3" fill="#0284c7" />
+      <text x="14" y="11" class="item-bullet">PRD pedagógico (MTAC - UJAT)</text>
+      
+      <circle cx="4" cy="28" r="3" fill="#0284c7" />
+      <text x="14" y="32" class="item-bullet">Google Antigravity (Gemini 3.1 Pro)</text>
+      
+      <circle cx="4" cy="49" r="3" fill="#0284c7" />
+      <text x="14" y="53" class="item-bullet">SPA web (HTML5, Tailwind, JS ES6)</text>
+      
+      <circle cx="4" cy="70" r="3" fill="#0284c7" />
+      <text x="14" y="74" class="item-bullet">17 módulos JS desacoplados en cliente</text>
+      
+      <circle cx="4" cy="91" r="3" fill="#0284c7" />
+      <text x="14" y="95" class="item-bullet">Módulo socrático contra sesgos cognitivos</text>
+      
+      <circle cx="4" cy="112" r="3" fill="#0284c7" />
+      <text x="14" y="116" class="item-bullet">Persistencia local (localStorage)</text>
+    </g>
+
+    <!-- Área de la Captura Auténtica del Prototipo Web -->
+    <g transform="translate(18, 220)">
+      <rect width="314" height="365" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,4" />
+      
+      <!-- Simulación esquemática de la interfaz del prototipo web -->
+      <rect x="12" y="14" width="290" height="28" rx="4" fill="#1e293b" />
+      <text x="24" y="32" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#60a5fa">🦅 Xolotl Capital (Web MVP)</text>
+      <text x="210" y="32" font-family="monospace" font-size="10px" fill="#34d399">$100,000 MXN</text>
+
+      <rect x="12" y="50" width="290" height="95" rx="5" fill="#f1f5f9" stroke="#e2e8f0" />
+      <text x="22" y="68" font-family="-apple-system, sans-serif" font-size="10.5px" font-weight="bold" fill="#0f172a">Mercado Bursátil BMV (Simulado)</text>
+      <text x="22" y="85" font-family="monospace" font-size="10px" fill="#334155">AMXB  $16.85  +1.2%</text>
+      <text x="22" y="102" font-family="monospace" font-size="10px" fill="#334155">WALMEX $56.30  -0.5%</text>
+      <text x="22" y="119" font-family="monospace" font-size="10px" fill="#334155">GFNORTE $128.50 +0.8%</text>
+
+      <!-- Modal socrático esquemático -->
+      <rect x="22" y="160" width="270" height="155" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="34" y="180" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#fbbf24">🤖 Xolo Tutor (Pausa Socrática)</text>
+      <text x="34" y="198" font-family="-apple-system, sans-serif" font-size="9.5px" fill="#e2e8f0">Vas a concentrar 50% en un solo activo.</text>
+      <text x="34" y="212" font-family="-apple-system, sans-serif" font-size="9.5px" fill="#e2e8f0">¿Qué tesis fundamenta este riesgo?</text>
+      <rect x="34" y="222" width="246" height="50" rx="4" fill="#0f172a" stroke="#334155" />
+      <text x="42" y="242" font-family="-apple-system, sans-serif" font-size="9px" font-style="italic" fill="#94a3b8">[Justificación del estudiante...]</text>
+      <rect x="180" y="280" width="100" height="24" rx="4" fill="#2563eb" />
+      <text x="200" y="296" font-family="-apple-system, sans-serif" font-size="9.5px" font-weight="bold" fill="#ffffff">Confirmar</text>
+
+      <text x="157" y="342" class="preview-label">[Captura Auténtica Prototipo Web]</text>
+      <text x="157" y="356" class="preview-sub">Artefacto conservado: 28-Abr-2026</text>
+    </g>
+  </g>
+
+  <!-- Flecha de transición 1 -> 2 -->
+  <line x1="400" y1="410" x2="425" y2="410" class="arrow-conn" />
+  <polygon points="425,410 415,404 415,416" fill="#0284c7" />
+
+  <!-- ==================== ETAPA 2 ==================== -->
+  <g transform="translate(425, 115)">
+    <!-- Contenedor principal de la Etapa 2 -->
+    <rect width="350" height="605" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.8" />
+    
+    <!-- Encabezado de Etapa -->
+    <rect x="15" y="14" width="28" height="26" rx="6" fill="#0284c7" />
+    <text x="29" y="32" class="stage-num">2</text>
+    <text x="52" y="27" class="stage-title">Transición Flutter y Multiplataforma</text>
+    <text x="52" y="42" class="stage-date">Mayo – Julio de 2026</text>
+
+    <!-- Características clave -->
+    <text x="18" y="70" class="section-label">Expansión de Arquitectura</text>
+    
+    <g transform="translate(18, 80)">
+      <circle cx="4" cy="7" r="3" fill="#0284c7" />
+      <text x="14" y="11" class="item-bullet">Adopción de Flutter 3.x + Riverpod</text>
+      
+      <circle cx="4" cy="28" r="3" fill="#0284c7" />
+      <text x="14" y="32" class="item-bullet">Backend Node.js 24 + Express en Vercel</text>
+      
+      <circle cx="4" cy="49" r="3" fill="#0284c7" />
+      <text x="14" y="53" class="item-bullet">Base de datos PostgreSQL en Supabase</text>
+      
+      <circle cx="4" cy="70" r="3" fill="#0284c7" />
+      <text x="14" y="74" class="item-bullet">Yahoo Finance API en tiempo real</text>
+      
+      <circle cx="4" cy="91" r="3" fill="#0284c7" />
+      <text x="14" y="95" class="item-bullet">Firebase Auth + FCM + Google Analytics</text>
+      
+      <circle cx="4" cy="112" r="3" fill="#0284c7" />
+      <text x="14" y="116" class="item-bullet">Worker de Cloudflare para frontend web</text>
+    </g>
+
+    <!-- Hito crítico de aprendizaje: Incidente de Órdenes -->
+    <g transform="translate(18, 220)">
+      <rect width="314" height="175" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="16" y="24" font-family="-apple-system, sans-serif" font-size="11.5px" font-weight="bold" fill="#b45309">HITO CRÍTICO DE FRICCIÓN TÉCNICA</text>
+      <text x="16" y="42" font-family="-apple-system, sans-serif" font-size="12px" font-weight="bold" fill="#0f172a">Órdenes programadas en Vercel (Jun 2026)</text>
+      
+      <text x="16" y="64" class="body-text">• Problema: Cron de Node inactivo en serverless.</text>
+      <text x="16" y="80" class="body-text">• Fix 1: Drenado on-demand en getPortfolio.</text>
+      <text x="16" y="96" class="body-text">• Fix 2: Migración a GitHub Actions (afcf3786).</text>
+      <text x="16" y="112" class="body-text">• Arquitectura final: Worker xolotl-cron en</text>
+      <text x="16" y="127" class="body-text">  Cloudflare disparando endpoints protegidos.</text>
+
+      <rect x="16" y="140" width="130" height="22" rx="4" fill="#fef3c7" stroke="#d97706" />
+      <text x="22" y="155" font-family="monospace" font-size="10px" font-weight="bold" fill="#78350f">Commit 8936ce8b</text>
+      
+      <rect x="156" y="140" width="142" height="22" rx="4" fill="#fef3c7" stroke="#d97706" />
+      <text x="162" y="155" font-family="monospace" font-size="10px" font-weight="bold" fill="#78350f">Commit afcf3786</text>
+    </g>
+
+    <!-- Bloque de Infraestructura Multi-Cloud -->
+    <g transform="translate(18, 410)">
+      <rect width="314" height="175" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2" />
+      <text x="16" y="25" class="section-label">Desacoplamiento Operativo</text>
+      <text x="16" y="48" class="body-text">La transición a Flutter exigió transformar la</text>
+      <text x="16" y="65" class="body-text">aplicación en un sistema distribuido:</text>
+      <text x="16" y="87" class="body-text">• Frontend: Cloudflare Workers (xolotl-capital-web)</text>
+      <text x="16" y="104" class="body-text">• Backend API: Vercel Serverless (Node 24)</text>
+      <text x="16" y="121" class="body-text">• Base de Datos: PostgreSQL 17 (Supabase)</text>
+      <text x="16" y="138" class="body-text">• Automatización: 13 GitHub Actions workflows</text>
+      <text x="16" y="157" font-family="-apple-system, sans-serif" font-size="10.5px" font-weight="bold" fill="#0284c7">→ Nacimiento de la necesidad de gobernanza</text>
+    </g>
+  </g>
+
+  <!-- Flecha de transición 2 -> 3 -->
+  <line x1="775" y1="410" x2="800" y2="410" class="arrow-conn" />
+  <polygon points="800,410 790,404 790,416" fill="#0284c7" />
+
+  <!-- ==================== ETAPA 3 ==================== -->
+  <g transform="translate(800, 115)">
+    <!-- Contenedor principal de la Etapa 3 -->
+    <rect width="350" height="605" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.8" />
+    
+    <!-- Encabezado de Etapa -->
+    <rect x="15" y="14" width="28" height="26" rx="6" fill="#0284c7" />
+    <text x="29" y="32" class="stage-num">3</text>
+    <text x="52" y="27" class="stage-title">Orquestación Agéntica y Supervisión</text>
+    <text x="52" y="42" class="stage-date">Agosto – Septiembre de 2026</text>
+
+    <!-- Características clave -->
+    <text x="18" y="70" class="section-label">Gobernanza y Asignación de Roles</text>
+    
+    <g transform="translate(18, 80)">
+      <circle cx="4" cy="7" r="3" fill="#0284c7" />
+      <text x="14" y="11" class="item-bullet">Multi-agente: Codex, OpenCode, Antigravity 2.0</text>
+      
+      <circle cx="4" cy="28" r="3" fill="#0284c7" />
+      <text x="14" y="32" class="item-bullet">Planificación: GPT-5.6 / GLM-5.3 (Razonamiento)</text>
+      
+      <circle cx="4" cy="49" r="3" fill="#0284c7" />
+      <text x="14" y="53" class="item-bullet">Ejecución: GLM-5.3-Flash / DeepSeek V4.1-Flash</text>
+      
+      <circle cx="4" cy="70" r="3" fill="#0284c7" />
+      <text x="14" y="74" class="item-bullet">Herramientas MCP: Context7 + codebase-memory</text>
+      
+      <circle cx="4" cy="91" r="3" fill="#0284c7" />
+      <text x="14" y="95" class="item-bullet">Memoria externa y contrato: AGENTS.md (361 lín.)</text>
+      
+      <circle cx="4" cy="112" r="3" fill="#0284c7" />
+      <text x="14" y="116" class="item-bullet">Presupuesto preventivo 25s (Commit 8a8837e4)</text>
+    </g>
+
+    <!-- Área de la Captura Auténtica de la Aplicación Actual -->
+    <g transform="translate(18, 220)">
+      <rect width="314" height="365" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,4" />
+      
+      <!-- Simulación esquemática de la app Flutter actual -->
+      <rect x="25" y="14" width="264" height="28" rx="6" fill="#0f172a" />
+      <text x="35" y="32" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#ffffff">Xólotl Capital — Multiplataforma</text>
+
+      <rect x="25" y="50" width="264" height="70" rx="8" fill="#2563eb" />
+      <text x="38" y="72" font-family="-apple-system, sans-serif" font-size="10.5px" fill="#bfdbfe">Patrimonio Virtual</text>
+      <text x="38" y="96" font-family="-apple-system, sans-serif" font-size="18px" font-weight="bold" fill="#ffffff">$124,580.40 MXN</text>
+      <text x="210" y="96" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#a7f3d0">+24.5%</text>
+
+      <!-- Gráfica de activo AAPL.MX -->
+      <rect x="25" y="128" width="264" height="120" rx="8" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="38" y="146" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#0f172a">AAPL.MX  $5,571.46 MXN</text>
+      <path d="M 38 210 Q 70 160 100 190 T 170 170 T 230 185 T 270 155" fill="none" stroke="#10b981" stroke-width="2.5" />
+      <text x="38" y="235" font-family="-apple-system, sans-serif" font-size="9px" fill="#64748b">08:30 CDMX</text>
+      <text x="235" y="235" font-family="-apple-system, sans-serif" font-size="9px" fill="#64748b">15:00 CDMX</text>
+
+      <!-- Botones de Trading con diseño anti-slop -->
+      <rect x="35" y="260" width="115" height="32" rx="16" fill="#10b981" />
+      <text x="65" y="280" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#ffffff">Comprar ↗</text>
+      <rect x="164" y="260" width="115" height="32" rx="16" fill="#ef4444" />
+      <text x="198" y="280" font-family="-apple-system, sans-serif" font-size="11px" font-weight="bold" fill="#ffffff">Vender ↘</text>
+
+      <text x="157" y="325" class="preview-label">[Captura Auténtica App Actual]</text>
+      <text x="157" y="340" class="preview-sub">Flutter Web / Android / iOS en producción</text>
+      <text x="157" y="354" font-family="monospace" font-size="9.5px" fill="#0284c7" text-anchor="middle">1,544 tests · 131 migraciones SQL</text>
+    </g>
+  </g>
+
+  <!-- Nota al pie metodológica -->
+  <text x="50" y="745" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11px" font-style="italic" fill="#64748b">Nota. La figura sintetiza las tres etapas identificadas en la evolución de Xolotl Capital, desde el prototipado inicial hasta la incorporación de agentes,</text>
+  <text x="50" y="760" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="11px" font-style="italic" fill="#64748b">herramientas especializadas y mecanismos de supervisión. Diseñado con tipografías y contrastes legibles tanto a color como en escala de grises.</text>
+</svg>
