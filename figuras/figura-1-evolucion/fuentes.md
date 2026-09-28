@@ -23,9 +23,11 @@ La **Figura 1** representa la línea de tiempo evolutiva de Xolotl Capital a tra
 
 ---
 
-## 3. Capturas de Pantalla Utilizadas
+## 3. Capturas de Pantalla Vinculadas
 
-- **Prototipo web conservado:** Captura tomada directamente del prototipo HTML/JS conservado de abril de 2026, mostrando la interfaz web original y el modal socrático.
-- **Aplicación actual:** Captura de la aplicación Flutter compilada en producción (`https://xolotl-capital.com`), ilustrando la evolución estética, el mercado BMV en vivo y el diseño anti-slop.
-
-*(Las capturas definitivas tomadas por el autor se integran en los recuadros reservados en el diagrama vectorial).*
+- **Prototipo web conservado (Etapa 1):** Captura auténtica [`prototipo/capturas/prototipo-web-abril-2026-mercado.png`](../../prototipo/capturas/prototipo-web-abril-2026-mercado.png) tomada directamente de la ejecución local del prototipo original de abril de 2026 (modo oscuro, grid de activos BMV, saldo simulado $10,000 MXN y sparklines).
+- **Aplicación actual en producción (Etapa 3):** Serie de capturas auténticas en [`evidencias/capturas-simulador-actual/`](../../evidencias/capturas-simulador-actual/) tomadas directamente del entorno productivo (`https://xolotl-capital.com`):
+  - `01-dashboard-inicio-movil.jpeg`: Dashboard patrimonial y evaluación previa del razonamiento.
+  - `02-mercados-cotizaciones-movil.jpeg`: Cotizaciones en tiempo real BMV/SIC e integración del tutor IA.
+  - `03-detalle-activo-bimboa-movil.jpeg`: Ficha avanzada con gráficos interactivos y orden de compra.
+  - `04-dashboard-escritorio-responsive.png`: Renderizado adaptativo en Flutter Web para escritorio.

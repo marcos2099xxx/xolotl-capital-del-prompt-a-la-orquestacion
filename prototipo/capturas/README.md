@@ -1,15 +1,22 @@
 # Capturas Auténticas del Prototipo Web Conservado
 
-Este directorio está destinado a almacenar las capturas de pantalla tomadas de forma directa y auténtica a partir de la ejecución local de la versión conservada del prototipo web (abril de 2026).
+Este directorio almacena las capturas de pantalla tomadas de forma directa y auténtica a partir de la ejecución de la versión conservada del prototipo web (28 de abril de 2026).
 
-## Protocolo de Generación de Capturas
+---
 
-1. **Entorno de ejecución:** Servidor HTTP local estático (`python3 -m http.server`) sirviendo la carpeta conservada sin modificar código ni estilos.
-2. **Sin alteraciones cosméticas:** No se aplicarán filtros, marcos de dispositivos ni modificaciones de diseño para hacer coincidir el prototipo con versiones posteriores.
-3. **Vistas requeridas:**
-   - `01-dashboard-mercado.png`: Vista principal con la lista de activos locales y resumen de patrimonio virtual.
-   - `02-intervencion-socratica.png`: Modal de confirmación de orden donde el módulo socrático interrumpe la operación para solicitar justificación reflexiva (mitigación de sesgos).
-   - `03-portafolio-y-diario.png`: Vista de tenencias actuales y balance de pérdidas/ganancias.
-   - `04-misiones-gamificacion.png`: Vista de desafíos diarios y misiones pedagógicas.
+## 1. Inventario de Capturas
 
-*(Las capturas serán generadas directamente por el autor y anexadas a esta carpeta antes de la publicación final).*
+| Archivo | Descripción | Dimensiones | Tema / Entorno | Fecha de Captura |
+| :--- | :--- | :--- | :--- | :--- |
+| [`prototipo-web-abril-2026-mercado.png`](prototipo-web-abril-2026-mercado.png) | Vista principal del mercado bursátil simulado, resumen de capital ($10,000 MXN), grid de activos con sparklines de barras, menú lateral y badge de "Novato". | 3016 × 1708 px | Modo Oscuro (Nativo de la versión web) | 28 de septiembre de 2026 |
+
+---
+
+## 2. Elementos Clave Visibles y Evidencia Documental
+
+La captura auténtica [`prototipo-web-abril-2026-mercado.png`](prototipo-web-abril-2026-mercado.png) demuestra empíricamente:
+
+1. **Naturaleza Web Monolítica:** Interfaz de Single Page Application (SPA) renderizada con Tailwind CSS y Chart.js en navegador.
+2. **Catálogo de Activos Simulados:** Coincidencia exacta de los tickers (AMXB $17.84, WALMEX $56.62, GFNORTE $128.50, CEMEXCPO, FEMSAUBD, GMEXICOB, TLEVISACPO, BIMBOA, PINFRA, LABB, NAFTRAC, IVVPESO, EMMXX, GLD, FUNO 11) con el archivo [`data/assets.js`](../codigo-completo/data/assets.js).
+3. **Mecánica de Gamificación Inicial:** Presencia de racha de 3 días, 35 estrellas de experiencia y rango inicial "Novato", implementados en cliente mediante [`js/gamification.js`](../codigo-completo/js/gamification.js).
+4. **Ausencia de Dependencias Serverless / Backend:** Toda la visualización opera sobre datos en memoria y almacenamiento local (`localStorage`), confirmando la arquitectura de fase temprana antes de la migración a Flutter y Vercel.

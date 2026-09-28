@@ -50,9 +50,9 @@ El repositorio está organizado en las siguientes secciones temáticas:
 | Directorio / Archivo | Descripción del contenido | Tipo de evidencia |
 | :--- | :--- | :--- |
 | [`pdr/`](pdr/) | **Product Design Document (PDR)** pedagógico original (*Guía PDR*, 28 de abril de 2026) que formalizó los fundamentos educativos y los sesgos a mitigar antes del desarrollo. | Documental primaria |
-| [`prototipo/`](prototipo/) | Artefactos preservados del prototipo web inicial en SPA monolítica (abril de 2026): catálogo BMV, lógica de cartera en cliente y banco de preguntas socráticas. | Documental primaria |
+| [`prototipo/`](prototipo/) | Primera versión completa del prototipo web en SPA monolítica (28 de abril de 2026, 18 archivos ejecutables en navegador), catálogo BMV simulado, banco de preguntas socráticas y captura auténtica en modo oscuro. | Documental primaria |
 | [`procedimiento/`](procedimiento/) | Descripción sistemática del procedimiento de desarrollo agéntico en 6 fases (Kolb), matriz operativa de roles humano-agente y extracto auditado del contrato operativo (`AGENTS.md`). | Sistematización metodológica |
-| [`evidencias/`](evidencias/) | Documentación longitudinal de fricciones técnicas: resolución del cron inactivo en serverless (junio 2026), presupuesto preventivo de 25s (agosto 2026) e inventario de modelos. | Documental primaria / Diffs |
+| [`evidencias/`](evidencias/) | Documentación longitudinal de fricciones técnicas (cron inactivo, límite de 25s), inventario de modelos/herramientas y serie de capturas de pantalla auténticas del simulador actual en producción (`evidencias/capturas-simulador-actual/`). | Documental primaria / Diffs |
 | [`paper/`](paper/) | Matriz exhaustiva de afirmación vs. evidencia con límites epistemológicos y cronología resumida verificada (abril–septiembre 2026). | Análisis de correspondencia |
 | [`figuras/`](figuras/) | Fuentes editables (Mermaid, SVG) y renderizados PNG a 200 DPI de la **Figura 1** (Evolución de Xolotl Capital) y la **Figura 2** (Procedimiento metodológico en 6 fases). | Ilustrativa / Metodológica |
 | [`MANIFEST.md`](MANIFEST.md) | Inventario formal con hashes criptográficos SHA-256 de todos los archivos del repositorio, indicando fuente original, transformaciones y sanitización. | Auditoría e integridad |
